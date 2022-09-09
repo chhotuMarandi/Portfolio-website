@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Work+Sans:wght@400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* 
@@ -25,4 +28,27 @@ CSS variables
   --box-shadow: rgba(50, 178, 242, 0.4) 0px 5px,
     rgba(43, 145, 182, 0.3) 0px 10px, rgba(37, 104, 155, 0.2) 0px 15px,
     rgba(32, 110, 125, 0.1) 0px 20px, rgba(0, 166, 207, 0.05) 0px 25px;
+}
+
+html {
+  font-size: 62.5%;
+  /*1rem = 10px */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: var(--heading);
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
 }
