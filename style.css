@@ -3,3 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* 
+======================
+CSS variables
+====================== */
+
+:root {
+  --heading: #239b56;
+  --para: #777;
+  --para-tint: #e4e4e4;
+  --white: #fff;
+  --helper: #65b989;
+  --helper-tint: #a7d7bb;
+  --bg: #e9f5ee;
+  --gradient: linear-gradient(0deg, rgb(35 155 86) 0%, rgb(0 212 255) 100%);
+  --gradientSupport: -webkit-linear-gradient(
+    rgb(132 144 255) 0%,
+    rgb(98 189 252) 100%
+  );
+  --box-shadow: rgba(50, 178, 242, 0.4) 0px 5px,
+    rgba(43, 145, 182, 0.3) 0px 10px, rgba(37, 104, 155, 0.2) 0px 15px,
+    rgba(32, 110, 125, 0.1) 0px 20px, rgba(0, 166, 207, 0.05) 0px 25px;
+}
