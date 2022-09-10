@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Work+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
 
 * {
   margin: 0;
@@ -26,9 +27,9 @@ CSS variables
     rgb(132 144 255) 0%,
     rgb(98 189 252) 100%
   );
-  --box-shadow: rgba(50, 178, 242, 0.4) 0px 5px,
-    rgba(43, 145, 182, 0.3) 0px 10px, rgba(37, 104, 155, 0.2) 0px 15px,
-    rgba(32, 110, 125, 0.1) 0px 20px, rgba(0, 166, 207, 0.05) 0px 25px;
+  --shadow: rgba(50, 178, 242, 0.4) 0px 5px, rgba(43, 145, 182, 0.3) 0px 10px,
+    rgba(37, 104, 155, 0.2) 0px 15px, rgba(32, 110, 125, 0.1) 0px 20px,
+    rgba(0, 166, 207, 0.05) 0px 25px;
 }
 
 html {
@@ -74,7 +75,7 @@ Header section
 
 .header {
   padding: 0 4.8rem;
-  height: 10rem;
+  height: 8rem;
   background-color: var(--bg);
   display: flex;
   justify-content: space-between;
@@ -111,4 +112,11 @@ Header section
 .navbar-link:active {
   color: var(--helper);
   /* transition: all 0.3s linear; */
+}
+
+.logo-name {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 3rem;
+  text-indent: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
