@@ -52,3 +52,21 @@ h3 {
   font-size: 1.8rem;
   font-weight: 400;
 }
+
+p {
+  color: var(--para);
+  line-height: 1.6;
+  font-size: 1.7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ==================
+Header section
+================== */
