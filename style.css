@@ -16,6 +16,7 @@ CSS variables
   --heading: #239b56;
   --para: #777;
   --para-tint: #e4e4e4;
+  --black: #212523;
   --white: #fff;
   --helper: #65b989;
   --helper-tint: #a7d7bb;
@@ -99,4 +100,15 @@ Header section
   display: inline-block;
   text-decoration: none;
   font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s linear;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: var(--helper);
+  /* transition: all 0.3s linear; */
 }
