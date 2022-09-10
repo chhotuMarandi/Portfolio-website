@@ -89,6 +89,7 @@ Header section
 
 .logo-area .logo {
   margin-right: 1rem;
+  color: var(--heading);
 }
 
 .navbar-lists {
