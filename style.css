@@ -179,6 +179,8 @@ text-shadow: var(--shadow);
   margin-top: 1.5rem;
   margin-bottom: 5rem;
   max-width: 60rem;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 .section-hero-image {
