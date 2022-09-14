@@ -107,3 +107,16 @@ Header section
 .navbar-link:active {
   color: var(--helper);
 }
+
+/* ==================
+Resuseable code
+================== */
+
+.section {
+  padding: 9rem;
+}
+
+
+/* ==================
+Hero section start
+================== */
