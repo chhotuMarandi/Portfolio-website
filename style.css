@@ -28,6 +28,8 @@ CSS variables
     rgb(98 189 252) 100%
   );
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --text-shadow: 4px 3px 0px #fff,
+    9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 html {
@@ -157,8 +159,10 @@ Hero section start
 .hero-top-data {
 text-transform: uppercase;
 font-weight: 500;
-font-size: 1.5rem;
+font-size: 2rem;
 color: var(--helper-tint);
+text-shadow: var(--shadow);
+
 }
 
 .hero-img {
@@ -168,6 +172,7 @@ color: var(--helper-tint);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 6.4rem;
+  text-shadow: var(--text-shadow);
 }
 
 .hero-para {
