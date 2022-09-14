@@ -20,7 +20,7 @@ CSS variables
   --black: #212523;
   --white: #fff;
   --helper: #65b989; 
-  --helper-tint: #a7d7bb;
+  --helper-tint: #00cc99;
   --bg: #e9f5ee;
   --gradient: linear-gradient(to top left, #00cc99 0%, #00ccff 100%);
   --gradientSupport: -webkit-linear-gradient(
@@ -80,9 +80,6 @@ Header section
   align-items: center;
 }
 
-.logo {
-  margin: 0 auto;
-}
 
 .navbar-lists {
   display: flex;
@@ -161,7 +158,7 @@ Hero section start
 text-transform: uppercase;
 font-weight: 500;
 font-size: 1.5rem;
-color: var(--helper);
+color: var(--helper-tint);
 }
 
 .hero-img {
