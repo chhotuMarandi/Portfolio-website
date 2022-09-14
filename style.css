@@ -113,10 +113,34 @@ Resuseable code
 ================== */
 
 .section {
-  padding: 9rem;
+  padding: 9rem 0;
 }
 
+.container-grid {
+  max-width: 140rem;
+  display: grid;
+  gap: 9rem;
+}
+
+/* .container-grid {
+  max-width: 140rem;
+} */
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+  
+}
 
 /* ==================
 Hero section start
-================== */
+===================== */
+
+.section-hero {
+  background-color: var(--bg);
+}
+
+.section-hero-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
