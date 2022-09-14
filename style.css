@@ -120,15 +120,26 @@ Resuseable code
   max-width: 140rem;
   display: grid;
   gap: 9rem;
+  margin: 0 auto;
 }
 
-/* .container-grid {
-  max-width: 140rem;
-} */
 
 .grid-two-column {
   grid-template-columns: repeat(2, 1fr);
   
+}
+
+.btn {
+background-color: black;
+display: inline-block;
+font-size: 1.8rem;
+text-transform: uppercase;
+font-weight: 500;
+cursor: pointer;
+padding: 1.6rem 3.2rem;
+border: none;
+color: var(--helper-tint);
+
 }
 
 /* ==================
@@ -142,5 +153,34 @@ Hero section start
 .section-hero-data {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+}
+
+.hero-top-data {
+text-transform: uppercase;
+font-weight: 500;
+font-size: 1.5rem;
+color: var(--helper);
+}
+
+.hero-img {
+  max-width: 80%;
+}
+.hero-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 6.4rem;
+}
+
+.hero-para {
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+  max-width: 60rem;
+}
+
+.section-hero-image {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
