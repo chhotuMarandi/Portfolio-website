@@ -232,4 +232,15 @@ Bio-data section start
 .bio-image img {
   width: 80%;
   box-shadow: -2rem -2rem 0 0 var(--helper);
+  display: inline-block;
+}
+
+.bio-data-stats {
+  display: flex;
+  flex-direction: column;
+  padding: 6.4rem 0;
+  gap: 30px;
+}
+
+.bio-progresss-bar {
 }
