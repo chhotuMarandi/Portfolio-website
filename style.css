@@ -59,6 +59,7 @@ p {
   color: var(--para);
   line-height: 1.6;
   font-size: 1.7rem;
+  font-weight: 500;
 }
 
 a {
@@ -210,7 +211,6 @@ Hero section start
   margin-bottom: 5rem;
   max-width: 60rem;
   text-transform: capitalize;
-  font-weight: 600;
 }
 
 .section-hero-image {
@@ -283,4 +283,38 @@ Bio-data section start
 
 .bar-5::before {
   width: 40%;
+}
+
+.bio-progresss-bar span {
+  position: absolute;
+  top: 1.8rem;
+  width: 4rem;
+  height: 2rem;
+  background: var(--gradientSupport);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.bar-1 span {
+  left: 46%;
+}
+
+.bar-2 span {
+  left: 86%;
+}
+
+.bar-3 span {
+  left: 76%;
+}
+
+.bar-4 span {
+  left: 56%;
+}
+
+.bar-5 span {
+  left: 36%;
 }
