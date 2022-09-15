@@ -109,6 +109,7 @@ Resuseable code
 
 .section {
   padding: 9rem 0;
+  background-color: var(--bg);
 }
 
 .container-grid {
@@ -145,13 +146,16 @@ Resuseable code
   box-shadow: var(--shadow);
 }
 
+.common-heading {
+  font-size: 4.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 6rem;
+  position: relative;
+}
 /* ==================
 Hero section start
 ===================== */
-
-.section-hero {
-  background-color: var(--bg);
-}
 
 .section-hero-data {
   display: flex;
@@ -205,14 +209,4 @@ Bio-data section start
 .bio-image img {
   width: 80%;
   box-shadow: -2rem -2rem 0 0 var(--helper);
-}
-.bio-progresss-bar {
-  background-color: #777;
-  padding: 0.5rem;
-}
-
-.percentage {
-  background-color: #00ccff;
-  padding: 0.2rem;
-  max-width: 80%;
 }
