@@ -19,7 +19,7 @@ CSS variables
   --para-tint: #e4e4e4;
   --black: #212523;
   --white: #fff;
-  --helper: #65b989; 
+  --helper: #65b989;
   --helper-tint: #00cc99;
   --bg: #e9f5ee;
   --gradient: linear-gradient(to top left, #00cc99 0%, #00ccff 100%);
@@ -28,8 +28,7 @@ CSS variables
     rgb(98 189 252) 100%
   );
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  --text-shadow: 4px 3px 0px #fff,
-    9px 8px 0px rgba(0, 0, 0, 0.15);
+  --text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 html {
@@ -82,7 +81,6 @@ Header section
   align-items: center;
 }
 
-
 .navbar-lists {
   display: flex;
   gap: 4.8rem;
@@ -107,7 +105,7 @@ Header section
 
 /* ==================
 Resuseable code
-================== */
+===================== */
 
 .section {
   padding: 9rem 0;
@@ -120,25 +118,31 @@ Resuseable code
   margin: 0 auto;
 }
 
-
 .grid-two-column {
   grid-template-columns: repeat(2, 1fr);
-  
 }
 
 .btn {
-background: var(--gradient);
-display: inline-block;
-font-size: 1.8rem;
-border-radius: 0.6rem;
-text-transform: uppercase;
-font-weight: 500;
-cursor: pointer;
-padding: 1.5rem 3rem;
-border: none;
-color: var(--white);
-box-shadow: var(--shadow);
+  background: var(--gradient);
+  display: inline-block;
+  font-size: 1.8rem;
+  border-radius: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  border: none;
+  color: var(--white);
+  /* box-shadow: var(--shadow); */
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
 
+.btn:hover,
+.btn:active {
+  box-shadow: var(--shadow);
 }
 
 /* ==================
@@ -157,12 +161,11 @@ Hero section start
 }
 
 .hero-top-data {
-text-transform: uppercase;
-font-weight: 500;
-font-size: 2rem;
-color: var(--helper-tint);
-text-shadow: var(--shadow);
-
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--helper-tint);
+  text-shadow: var(--shadow);
 }
 
 .hero-img {
@@ -188,4 +191,3 @@ text-shadow: var(--shadow);
   align-items: center;
   justify-content: center;
 }
-
