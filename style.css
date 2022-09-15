@@ -242,5 +242,45 @@ Bio-data section start
   gap: 30px;
 }
 
+.bio-data-stats h3 {
+  margin-bottom: 1rem;
+}
+
 .bio-progresss-bar {
+  width: 90%;
+  height: 0.8rem;
+  background-color: var(--para);
+  border-radius: 10rem;
+  position: relative;
+}
+
+.bio-progresss-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: inherit;
+  background: var(--gradient);
+  border-radius: 10rem;
+}
+
+.bar-1::before {
+  width: 50%;
+}
+
+.bar-2::before {
+  width: 90%;
+}
+
+.bar-3::before {
+  width: 80%;
+}
+
+.bar-4::before {
+  width: 60%;
+}
+
+.bar-5::before {
+  width: 40%;
 }
