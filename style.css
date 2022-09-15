@@ -16,13 +16,14 @@ CSS variables
 :root {
   --heading: #239b56;
   --para: #777;
+  --underline: #006170;
   --para-tint: #e4e4e4;
   --black: #212523;
   --white: #fff;
   --helper: #65b989;
   --helper-tint: #00cc99;
   --bg: #e9f5ee;
-  --gradient: linear-gradient(to top left, #00cc99 0%, #00ccff 100%);
+  --gradient: linear-gradient(to top left, #00cc99 0%, #00ccffc5 100%);
   --gradientSupport: -webkit-linear-gradient(
     rgb(132 144 255) 0%,
     rgb(98 189 252) 100%
@@ -153,6 +154,28 @@ Resuseable code
   margin-bottom: 6rem;
   position: relative;
 }
+
+.common-heading::before {
+  content: '';
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--helper);
+}
+
+.common-heading::after {
+  content: '';
+  position: absolute;
+  top: 118%;
+  left: 1.5rem;
+  min-width: 300px;
+  background-color: var(--underline);
+  height: 0.3rem;
+}
+
 /* ==================
 Hero section start
 ===================== */
