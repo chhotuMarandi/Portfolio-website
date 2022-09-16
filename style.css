@@ -338,3 +338,27 @@ Bio-data section start
   border-bottom-color: rgb(132 144 255);
   top: -1.6rem;
 }
+
+/* ==================
+Portfolio section start
+===================== */
+
+.section-portfolio {
+  transition: all 0.7s linear;
+}
+
+.section-portfolio p {
+  max-width: 60rem;
+}
+
+.p-btns {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.img-overlay img {
+  width: 80%;
+}
