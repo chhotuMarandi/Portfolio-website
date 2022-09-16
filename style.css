@@ -320,3 +320,13 @@ Bio-data section start
 }
 
 /* to create a crate */
+.bio-progresss-bar span::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.8rem solid rgb(132 144 255);
+  border-color: transparent;
+  border-bottom-color: rgb(132 144 255);
+  top: -1.6rem;
+}
