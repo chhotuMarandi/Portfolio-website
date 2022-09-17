@@ -114,18 +114,28 @@ Resuseable code
   background-color: var(--bg);
 }
 
-.container-grid {
+.container {
   max-width: 140rem;
-  display: grid;
-  gap: 9rem;
   margin: 0 auto;
 }
 
+.container-grid {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9rem;
+}
+
 .grid-two-column {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-three-column {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -354,11 +364,15 @@ Portfolio section start
 .p-btns {
   display: flex;
   justify-content: center;
-  gap: 6rem;
   align-items: center;
-  margin-bottom: 2rem;
+  gap: 3.2rem;
+  margin: 3.2rem 0;
 }
 
-.img-overlay img {
-  width: 80%;
+.portfolio-images {
+  gap: 3.2rem;
+}
+
+.portfolio-images img {
+  width: 100%;
 }
