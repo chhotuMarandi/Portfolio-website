@@ -412,3 +412,13 @@ Portfolio section start
   color: var(--white);
   text-decoration: none;
 }
+
+.img-overlay .common-heading::before {
+  width: 0;
+  height: 0;
+}
+
+.img-overlay .common-heading::after {
+  width: 0;
+  height: 0;
+}
