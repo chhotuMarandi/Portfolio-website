@@ -431,6 +431,6 @@ Portfolio section start
   transform: translateY(-1rem);
 }
 
-.p-img-not-active {
+.not-active {
   display: none;
 }
