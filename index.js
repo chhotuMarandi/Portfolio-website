@@ -24,8 +24,31 @@ p_btns.addEventListener('click', (e) => {
   p_img_elem.forEach((currElem) => currElem.classList.add('not-active'));
 
   img_active.forEach((currElem) => currElem.classList.remove('not-active'));
+});
 
-  // p-btn--2
+//=================
+//Counter animation
+//=================
 
-  // p_img_elem
+const counters = document.querySelectorAll('.counter-number');
+
+counters.forEach((counter) => {
+  counter.innerHTML = 0;
+
+  const updateCounter = () => {
+    const dataCount = Number(counter.getAttribute('data-target'));
+    console.log(dataCount);
+
+    const initialData = Number(counter.innerHTML);
+    const increamentData = dataCount / 100;
+
+    if (initialData < dataCount) {
+      counter.innerHTML = `${Math.round(initialData + increamentData)}`;
+      setTimeout(updateCounter, 10);
+    } else {
+      counter.innerHTML = dataCount;
+    }
+  };
+
+  updateCounter();
 });
