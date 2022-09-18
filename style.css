@@ -140,6 +140,8 @@ Resuseable code
 }
 
 .grid-four-column {
+  display: grid;
+  gap: 16rem;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -429,4 +431,36 @@ Portfolio section start
 
 .not-active {
   display: none;
+}
+
+/* 
+====================== 
+counter animation section
+========================== */
+
+.counter-container {
+  width: 100%;
+  height: 20rem;
+  background: var(--gradientSupport);
+  display: flex;
+  justify-content: center;
+  /* gap: 10rem; */
+  align-items: center;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.table h3 {
+  color: var(--white);
+  font-size: 3.8rem;
+}
+
+.table p {
+  font-size: 1rem;
+  color: var(--white);
 }
