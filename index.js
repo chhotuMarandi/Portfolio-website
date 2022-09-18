@@ -13,4 +13,19 @@ p_btns.addEventListener('click', (e) => {
   p_btn.forEach((currElem) => currElem.classList.remove('p-btn-active'));
 
   p_btn_clicked.classList.add('p-btn-active');
+
+  //to find the number is data attr..
+
+  const btn_num = p_btn_clicked.dataset.btnNumber;
+  console.log(btn_num);
+
+  const img_active = document.querySelectorAll(`.p-btn--${btn_num}`);
+
+  p_img_elem.forEach((currElem) => currElem.classList.add('not-active'));
+
+  img_active.forEach((currElem) => currElem.classList.remove('not-active'));
+
+  // p-btn--2
+
+  // p_img_elem
 });

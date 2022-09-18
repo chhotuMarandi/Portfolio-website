@@ -423,10 +423,6 @@ Portfolio section start
   height: 0;
 }
 
-/* .p-btn:hover {
-  transform: translateY(-1rem);
-} */
-
 .p-btn-active {
   transform: translateY(-1rem);
 }
