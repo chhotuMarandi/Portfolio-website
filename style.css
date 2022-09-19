@@ -473,6 +473,20 @@ counter animation section
 ========================
 Services offer section
 ======================== */
+
+.service-section {
+  transition: all 0.7s linear;
+}
+
+.service-section p {
+  max-width: 60rem;
+}
+
+.service-section .grid {
+  margin-top: 10rem;
+  row-gap: 10rem;
+}
+
 .services-offer {
   height: 20rem;
 }
@@ -480,8 +494,7 @@ Services offer section
 .box-container {
   background-color: var(--bg);
   text-align: center;
-  width: 30rem;
-  height: 30rem;
+  padding: 6.4rem 3.4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -494,6 +507,7 @@ Services offer section
 .box-container h3 {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
+  text-transform: capitalize;
 }
 
 .box-container:hover {
