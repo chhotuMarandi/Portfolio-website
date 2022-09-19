@@ -44,7 +44,7 @@ counters.forEach((counter) => {
 
     if (initialData < dataCount) {
       counter.innerHTML = `${Math.round(initialData + increamentData)}`;
-      setTimeout(updateCounter, 10);
+      setTimeout(updateCounter, 20);
     } else {
       counter.innerHTML = dataCount;
     }
