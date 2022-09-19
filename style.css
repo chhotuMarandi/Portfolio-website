@@ -29,7 +29,7 @@ CSS variables
     rgb(98 189 252) 100%
   );
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  --shadowGlow: rgba(0, 178, 223, 0.788) 0px 3px 8px;
+  --shadowGlow: rgb(136, 196, 211) 0px 3px 8px;
   --text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -488,8 +488,14 @@ Services offer section
   align-items: center;
   border-radius: 1rem;
   box-shadow: var(--shadowGlow);
+  transition: all 0.3s ease;
 }
 
-.box-container i {
-  margin-bottom: 2rem;
+.box-container h3 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.box-container:hover {
+  transform: translateY(-1.5rem);
 }
