@@ -504,6 +504,16 @@ Services offer section
   transition: all 0.3s ease;
 }
 
+.box-container i {
+  display: inline-block;
+  border-radius: 30% 70% 70% 30% / 47% 45% 55% 53%;
+  background-color: var(--para-tint);
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  color: var(--black);
+  animation: water-wave 3s linear infinite;
+}
+
 .box-container h3 {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
