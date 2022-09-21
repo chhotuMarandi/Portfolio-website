@@ -37,7 +37,7 @@ counters.forEach((counter) => {
 
   const updateCounter = () => {
     const dataCount = Number(counter.getAttribute('data-target'));
-    console.log(dataCount);
+    // console.log(dataCount);
 
     const initialData = Number(counter.innerHTML);
     const increamentData = dataCount / 100;
@@ -58,13 +58,13 @@ counters.forEach((counter) => {
 // ===============
 
 var swiper = new Swiper('.mySwiper', {
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 30,
-  autoplay: {
-    delay: 2500,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  // },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
 });

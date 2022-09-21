@@ -571,6 +571,7 @@ Swiper section
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -581,9 +582,27 @@ Swiper section
   align-items: center;
 }
 
+.swiper-client-msg {
+  padding: 5rem 8rem;
+  background: var(--white);
+  border-radius: 1rem;
+  text-align: left;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.swiper-cilent-msg::before {
+  content: '';
+  position: absolute;
+  bottom: -10rem;
+  left: 50%;
+  border: 5rem solid var(--white);
+  border-color: transparent;
+  border-top-color: #006170;
+}
+
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 0.5rem solid var(--black);
 }
