@@ -556,9 +556,9 @@ Services offer section
 Swiper section
 ================ */
 
-.section-testimonial {
+/* .section-testimonial {
   background: var(--white);
-}
+} */
 
 .swiper {
   width: 100%;
@@ -594,7 +594,7 @@ Swiper section
   box-shadow: var(--shadow);
   position: relative;
 }
-.swiper-client-msg ::before {
+.swiper-client-msg::before {
   content: '';
   position: absolute;
   bottom: -10rem;
@@ -613,8 +613,31 @@ Swiper section
   border: 0.3rem solid var(--black);
 }
 
+.swiper-client-msg p::before {
+  content: '\f10d';
+  position: absolute;
+  top: 0rem;
+  left: 2rem;
+  font-size: 5rem;
+  color: #ced3ff;
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
+.swiper-client-msg p::after {
+  content: '\f10e';
+  position: absolute;
+  bottom: 0rem;
+  right: 4rem;
+  font-size: 5rem;
+  color: #ced3ff;
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
 .swiper-client-data {
-  /* margin-top: 3.2rem; */
+  margin: 3.2rem 0;
+
   gap: 3.2rem;
   align-items: center;
 }
