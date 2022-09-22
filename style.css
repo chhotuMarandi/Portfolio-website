@@ -556,9 +556,9 @@ Services offer section
 Swiper section
 ================ */
 
-/* .section-testimonial {
-  background: var(--white);
-} */
+.section-testimonial {
+  background: #f7f9f9;
+}
 
 .swiper {
   width: 100%;
@@ -637,7 +637,6 @@ Swiper section
 
 .swiper-client-data {
   margin: 3.2rem 0;
-
   gap: 3.2rem;
   align-items: center;
 }
