@@ -556,6 +556,10 @@ Services offer section
 Swiper section
 ================ */
 
+.section-testimonial {
+  background: var(--white);
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -590,19 +594,27 @@ Swiper section
   box-shadow: var(--shadow);
   position: relative;
 }
-.swiper-cilent-msg::before {
+.swiper-client-msg ::before {
   content: '';
   position: absolute;
   bottom: -10rem;
   left: 50%;
+  transform: translate(-50%);
   border: 5rem solid var(--white);
   border-color: transparent;
-  border-top-color: #006170;
+  border-top-color: var(--bg);
 }
 
 .swiper-slide img {
-  max-width: 5rem;
-  height: 5rem;
+  max-width: 7rem;
+  height: 7rem;
+  object-fit: cover;
   border-radius: 50%;
-  border: 0.5rem solid var(--black);
+  border: 0.3rem solid var(--black);
+}
+
+.swiper-client-data {
+  /* margin-top: 3.2rem; */
+  gap: 3.2rem;
+  align-items: center;
 }
