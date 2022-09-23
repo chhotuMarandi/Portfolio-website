@@ -24,11 +24,9 @@ CSS variables
   --helper-tint: #00cc99;
   --bg: #e9f5ee;
   --bg2: #f7f9f9;
+  --overlay: #3e64ff;
   --gradient: linear-gradient(to top left, #00cc99 0%, #00ccffc5 100%);
-  --gradientSupport: -webkit-linear-gradient(
-    rgb(132 144 255) 0%,
-    rgb(98 189 252) 100%
-  );
+  --gradientSupport: -webkit-linear-gradient(#8490ff 0%, #3e64ff 100%);
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --shadowGlow: rgb(136, 196, 211) 0px 3px 8px;
   --text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
@@ -622,7 +620,7 @@ Swiper section
   top: 0rem;
   left: 2rem;
   font-size: 5rem;
-  color: var(--bg2);
+  color: #ced3ff;
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
 }
@@ -655,7 +653,7 @@ Freelancing section start
 .freelancing-section {
   background-image: url(./images/freelance.jpg);
   background-size: 100%;
-  background-position: fixed;
+  background-attachment: fixed;
   position: relative;
   width: 100%;
   height: 22rem;
@@ -670,7 +668,7 @@ Freelancing section start
   width: 100%;
   height: 100%;
   opacity: 0.7;
-  background: var(--gradientSupport);
+  background-color: var(--overlay);
 }
 
 .overlay .container {
@@ -699,4 +697,41 @@ Freelancing section start
 .freelancing-section h2,
 .freelancing-section p {
   color: var(--white);
+}
+
+/* ===========================
+Contact section start
+=========================== */
+
+.contact-section-main {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-top: 9rem;
+  transition: all 0.3s linear;
+}
+
+.contact-section-main form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.contact-section-main input,
+.contact-section-main textarea {
+  padding: 1.5rem 2rem;
+  border: 0.1rem solid #c9c9c9;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-family: 'work sans';
+  width: 100%;
+}
+
+.contact-section-main input[type='submit'] {
+  max-width: 30%;
+  border: none;
+}
+
+.contact-section-main label {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
