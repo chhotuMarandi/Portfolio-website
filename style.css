@@ -25,6 +25,7 @@ CSS variables
   --bg: #e9f5ee;
   --bg2: #f7f9f9;
   --overlay: #3e64ff;
+  --cardColor: #f7f9f9;
   --gradient: linear-gradient(to top left, #00cc99 0%, #00ccffc5 100%);
   --gradientSupport: -webkit-linear-gradient(#8490ff 0%, #3e64ff 100%);
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -492,7 +493,7 @@ Services offer section
 }
 
 .box-container {
-  background-color: var(--bg);
+  background-color: var(--white);
   text-align: center;
   padding: 6.4rem 3.4rem;
   display: flex;
@@ -500,7 +501,7 @@ Services offer section
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  box-shadow: var(--shadowGlow);
+  box-shadow: var(--shadow);
   transition: all 0.3s ease;
 }
 
@@ -508,7 +509,7 @@ Services offer section
   display: inline-block;
   border-radius: 30% 70% 70% 30% / 47% 45% 55% 53%;
   /* border: 1px solid var(--black); */
-  background-color: var(--para-tint);
+  background-color: #e0ffff;
   display: inline-block;
   padding: 1.4rem 1.8rem;
   position: relative;
@@ -526,7 +527,7 @@ Services offer section
   height: 90%;
   border-radius: 68% 32% 47% 53% / 39% 52% 48% 61%;
   background: transparent;
-  border: 1px solid var(--black);
+  border: 1px solid #83d7ee;
   animation: water-wave 3s linear infinite;
 }
 
@@ -557,7 +558,7 @@ Swiper section
 ================ */
 
 .section-testimonial {
-  background: #f7f9f9;
+  background: var(--bg2);
 }
 
 .swiper {
@@ -603,7 +604,8 @@ Swiper section
   transform: translate(-50%);
   border: 5rem solid var(--white);
   border-color: transparent;
-  border-top-color: #f7f9f9;
+  border-top-color: var(--white);
+  filter: drop-shadow(rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px);
 }
 
 .swiper-slide img {
