@@ -741,3 +741,19 @@ Contact section start
   font-size: 2rem;
   margin-bottom: 20px;
 }
+
+/* ===========================
+Footer section start
+=========================== */
+
+.footer {
+  background-color: #154360;
+  width: 100%;
+  height: 50vh;
+}
+
+.footer .container {
+  max-width: 90%;
+  background-color: red;
+  margin-top: 8rem;
+}
