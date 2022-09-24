@@ -27,7 +27,7 @@ CSS variables
   --overlay: #3e64ff;
   --cardColor: #f7f9f9;
   --gradient: linear-gradient(to top left, #00cc99 0%, #00ccffc5 100%);
-  --gradientSupport: -webkit-linear-gradient(#8490ff 0%, #3e64ff 100%);
+  --gradientSupport: -webkit-linear-gradient(#8490ff 0%, #00ccffc5 100%);
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --shadowGlow: rgb(136, 196, 211) 0px 3px 8px;
   --text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
@@ -715,6 +715,10 @@ Contact section start
 .contact-section-main form {
   display: flex;
   flex-direction: column;
+  gap: 3.2rem;
+}
+
+.contact-section-main .grid {
   gap: 3.2rem;
 }
 
