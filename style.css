@@ -841,5 +841,6 @@ scrollTop section start
   padding: 1.4rem 1.8rem;
   display: inline-block;
   color: var(--);
+  cursor: pointer;
   animation: water-wave 3s linear infinite;
 }
