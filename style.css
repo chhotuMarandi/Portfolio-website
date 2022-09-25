@@ -820,3 +820,26 @@ footer a:hover,
 footer a:active {
   color: var(--white);
 }
+
+/* 
+======================
+scrollTop section start
+======================
+ */
+
+.scrollTop-style {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  z-index: 1;
+}
+
+.scroll-top {
+  width: 4rem;
+  height: 4rem;
+  background-color: #90acd133;
+  padding: 1.4rem 1.8rem;
+  display: inline-block;
+  color: var(--);
+  animation: water-wave 3s linear infinite;
+}

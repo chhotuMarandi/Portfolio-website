@@ -68,3 +68,14 @@ var swiper = new Swiper('.mySwiper', {
     clickable: true,
   },
 });
+
+// Scroll top button
+
+const footerElement = document.querySelector('.section-footer');
+
+const scrollIcon = document.createElement('div');
+scrollIcon.classList.add('scrollTop-style');
+
+scrollIcon.innerHTML = `<ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>`;
+
+footerElement.after(scrollIcon);
