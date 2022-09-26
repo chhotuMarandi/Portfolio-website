@@ -30,27 +30,25 @@ p_btns.addEventListener('click', (e) => {
 //Counter animation
 //=================
 
-const counters = document.querySelectorAll('.counter-number');
+const counterNumber = document.querySelectorAll('.counter-numbers');
 
-counters.forEach((counter) => {
-  counter.innerHTML = 0;
+const speed = 200;
 
-  const updateCounter = () => {
-    const dataCount = Number(counter.getAttribute('data-target'));
-    // console.log(dataCount);
+counterNumber.forEach((currentElm) => {
+  const updateNumber = () => {
+    const targetNumber = parseInt(currentElm.dataset.number);
 
-    const initialData = Number(counter.innerHTML);
-    const increamentData = dataCount / 100;
+    const initialNumber = parseInt(currentElm.innerHTML);
 
-    if (initialData < dataCount) {
-      counter.innerHTML = `${Math.round(initialData + increamentData)}`;
-      setTimeout(updateCounter, 20);
-    } else {
-      counter.innerHTML = dataCount;
+    const increamentNumber = Math.trunc(targetNumber / speed);
+
+    if (initialNumber < targetNumber) {
+      currentElm.innerHTML = `${initialNumber + increamentNumber}+`;
+      setTimeout(updateNumber, 10);
     }
   };
 
-  updateCounter();
+  updateNumber();
 });
 
 // ===============

@@ -725,6 +725,7 @@ Contact section start
 
 .contact-section-main input,
 .contact-section-main textarea {
+  margin-top: 1rem;
   padding: 1.5rem 2rem;
   border: 0.1rem solid #c9c9c9;
   border-radius: 5px;
