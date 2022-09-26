@@ -114,6 +114,10 @@ Header section
   cursor: pointer;
 }
 
+.mobile-nav-btn [name='close-outline'] {
+  display: none;
+}
+
 /* ==================
 Resuseable code
 ===================== */
@@ -851,4 +855,25 @@ scrollTop section start
   color: var(--);
   cursor: pointer;
   animation: water-wave 3s linear infinite;
+}
+
+/*
+======================
+Responsive for mobile 
+======================*/
+
+@media (max-width: 980px) {
+  .header {
+    position: relative;
+  }
+
+  .mobile-nav-btn {
+    display: block;
+    z-index: 9999;
+  }
+
+  .mobile-icons {
+    width: 5rem;
+    height: 5rem;
+  }
 }
