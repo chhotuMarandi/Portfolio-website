@@ -107,6 +107,13 @@ Header section
   color: var(--helper);
 }
 
+.mobile-nav-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 /* ==================
 Resuseable code
 ===================== */
