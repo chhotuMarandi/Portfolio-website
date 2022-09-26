@@ -85,3 +85,15 @@ const scrollTop = () => {
 };
 
 scrollIcon.addEventListener('click', scrollTop);
+
+// ======================
+// creating a responsive navbar
+// ======================
+
+const mobile_nav = document.querySelector('.mobile-nav-btn');
+
+const headerElm = document.querySelector('.header');
+
+mobile_nav.addEventListener('click', () => {
+  headerElm.classList.toggle('active');
+});
