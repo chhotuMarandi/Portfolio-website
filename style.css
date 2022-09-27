@@ -25,6 +25,14 @@ CSS variables
   --footerColor: #154360;
   --bg: #e9f5ee;
   --bg2: #f7f9f9;
+  --navbarColor: linear-gradient(
+    to bottom,
+    #28b463,
+    #0aa064,
+    #008d62,
+    #00795d,
+    #0e6655
+  );
   --overlay: #3e64ff;
   --cardColor: #f7f9f9;
   --gradient: linear-gradient(to top left, #00cc99 0%, #00ccffc5 100%);
@@ -875,6 +883,9 @@ Responsive for mobile
   .mobile-icons {
     width: 5rem;
     height: 5rem;
+    border: 4px solid var(--black);
+    border-radius: 8px;
+    color: var(--black);
   }
 
   .navbar {
@@ -883,14 +894,16 @@ Responsive for mobile
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--gradientSupport);
+    background: var(--navbarColor);
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     transform: translateX(100%);
     transition: all 0.5s linear;
-    visibility: hidden;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     z-index: 999;
   }
