@@ -1112,4 +1112,21 @@ Responsive for mobile
     padding: 1rem;
     gap: 1rem;
   }
+
+  /* services section */
+
+  .services-section .grid-three-column {
+    grid-template-columns: 1fr;
+    margin-top: 3.2rem;
+  }
+
+  /* freelance section  */
+
+  .freelancing-section h2 {
+    font-size: 2.8rem;
+  }
+
+  .freelancing-section p {
+    font-size: 1.2rem;
+  }
 }
