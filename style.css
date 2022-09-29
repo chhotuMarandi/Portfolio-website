@@ -464,7 +464,7 @@ Portfolio section start
 ====================== 
 counter animation section
 ========================== */
-.counter {
+.counter-section {
   transition: all 0.7s linear;
 }
 
@@ -977,5 +977,68 @@ Responsive for mobile
 
   .active .mobile-nav-btn .mobile-icons[name='close-outline'] {
     display: block;
+  }
+}
+
+/* for 800px */
+
+@media (max-width: 50em) {
+  .container {
+    max-width: 71rem;
+  }
+
+  .section-hero .grid-two-column {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .section-hero img {
+    width: 70%;
+  }
+
+  .section-hero-data {
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .hero-para {
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-heading {
+    text-align: center;
+  }
+
+  /* bio data */
+
+  .section-biodata .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .section-biodata .bio-image {
+    grid-row: 2;
+  }
+
+  .section-biodata .bio-data-btn {
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+
+  .section-biodata img {
+    width: 70%;
+    margin-top: 1.2rem;
+  }
+
+  /* portfolio section */
+
+  .section-portfolio .grid-three-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* section counter data */
+
+  .counter-section .grid-four-column {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
