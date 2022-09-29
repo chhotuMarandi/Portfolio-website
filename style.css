@@ -1137,4 +1137,9 @@ Responsive for mobile
   .contact-container .grid-two-column {
     grid-template-columns: 1fr;
   }
+
+  .section-footer .f-about,
+  .section-footer .f-about {
+    grid-column: 1/-1;
+  }
 }
