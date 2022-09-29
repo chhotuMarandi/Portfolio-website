@@ -1129,4 +1129,12 @@ Responsive for mobile
   .freelancing-section p {
     font-size: 1.2rem;
   }
+
+  .contact-section-main {
+    padding: 0 3.2rem;
+  }
+
+  .contact-container .grid-two-column {
+    grid-template-columns: 1fr;
+  }
 }
