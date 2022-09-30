@@ -51,6 +51,25 @@ counterNumber.forEach((currentElm) => {
   updateNumber();
 });
 
+const myJsmedia = (widthSize) => {
+  if (widthSize.matches) {
+    new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    });
+  } else {
+    new Swiper('.mySwiper', {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    });
+  }
+};
+const widthSize = window.matchMedia('(max-width: 780px');
+// call listener funtion at run time
+myJsmedia(widthSize);
+// attach listener function on state change
+widthSize.addEventListener('change', myJsmedia);
+
 // ===============
 // swiper js code
 // ===============
