@@ -1,297 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio page</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <img
-        src="/Logo/logo.png"
-        alt="our main logo"
-        class="logo"
-        width="250px"
-      />
 
-      <nav class="navbar">
-        <ul class="navbar-lists">
-          <li><a href="/index.html" class="navbar-link home-link">Home</a></li>
-          <li>
-            <a href="/about.html" class="navbar-link about-link">About</a>
-          </li>
-          <li>
-            <a href="/services.html" class="navbar-link service-link"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a href="/portfolio.html" class="navbar-link portfolio-link"
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a href="/contact.html" class="navbar-link contact-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- =====================
-    Portfolio- Section start
-    ========================== -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <section class="section section-portfolio" id="portfolio-section">
-      <div class="container">
-        <h2 class="common-heading">latest work</h2>
+<body>
+  <!-- 
+                =======================
+                header navbar section start
+              =========================
+              -->
+  <header class="header ">
+    <img src="logo/logo.jpg" alt="our main logo" class="logo" width="250px" />
+
+    <nav class="navbar ">
+      <ul class="navbar-lists">
+        <li><a href="index.html" class="navbar-link home-link">Home</a></li>
+        <li>
+          <a href="about.html" class="navbar-link about-link">About</a>
+        </li>
+        <li>
+          <a href="services.html" class="navbar-link service-link">Services</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="navbar-link portfolio-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="contact.html" class="navbar-link contact-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-nav-btn">
+      <ion-icon name="menu-outline" class="mobile-icons "></ion-icon>
+      <ion-icon name="close-outline" class="mobile-icons"></ion-icon>
+    </div>
+  </header>
+  <!-- =====================
+      Portfolio- Section start
+      ========================== -->
+
+  <section class="section section-portfolio" id="portfolio-section">
+    <div class="container">
+      <h2 class="common-heading">latest work</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam,
+        doloribus!
+      </p>
+    </div>
+    <!-- buttons section -->
+    <div class="p-btns">
+      <div class="btn p-btn" data-btn-number="1">HTML/CSS</div>
+      <div class="btn p-btn" data-btn-number="2">JavaScript</div>
+      <div class="btn p-btn" data-btn-number="3">React js</div>
+    </div>
+    <!-- portfolio-grid -->
+    <div class="container grid grid-three-column portfolio-images">
+      <div class="img-overlay p-btn--1">
+        <img src="./images/project-1.jpg" loading="lazy" alt="portfolio images" />
+        <div class="overlay">
+          <a href="https://chhotumarandi.github.io/Unit-Converter/" class="common-heading" target="_blank">project 1</a>
+        </div>
+      </div>
+
+      <div class="img-overlay p-btn--2">
+        <img src="./images/project-2.jpg" loading="lazy" alt="portfolio images" />
+        <div class="overlay">
+          <a href="https://chhotumarandi.github.io/Background-Color-Changer/" class="common-heading"
+            target="_blank">project 2</a>
+        </div>
+      </div>
+
+      <div class="img-overlay p-btn--3">
+        <img src="./images/project-3.jpg" loading="lazy" alt="portfolio images" />
+        <div class="overlay">
+          <a href="https://chhotumarandi.github.io/List-of-Netflix-movies/" class="common-heading"
+            target="_blank">project
+            3</a>
+        </div>
+      </div>
+
+      <div class="img-overlay p-btn--1 p-btn--3">
+        <img src="./images/project-4.jpg" loading="lazy" alt="portfolio images" />
+        <div class="overlay">
+          <a href="https://chhotumarandi.github.io/Login-form/" class="common-heading" target="_blank">project 4</a>
+        </div>
+      </div>
+
+      <div class="img-overlay p-btn--3 p-btn--2">
+        <img src="./images/project-5.jpg" loading="lazy" alt="portfolio images" />
+        <div class="overlay">
+          <a href="https://chhotumarandi.github.io/Update-Counter/" class="common-heading" target="_blank">project 5</a>
+        </div>
+      </div>
+
+      <div class="img-overlay p-btn--2">
+        <img src="./images/project-6.jpg" loading="lazy" alt="portfolio images" />
+        <div class="overlay">
+          <a href="https://chhotumarandi.github.io/Review-Carousel/" class="common-heading" target="_blank">project
+            6</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=================
+      Footer section start
+      =================== -->
+
+  <footer class="section-footer section">
+    <div class="container grid grid-four-column">
+      <div class="f-about">
+        <h3>About</h3>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam,
-          doloribus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque
+          dolore ratione, consequatur cumque odit?
         </p>
       </div>
-      <!-- buttons section -->
-      <div class="p-btns">
-        <div class="btn p-btn" data-btn-number="1">HTML/CSS</div>
-        <div class="btn p-btn" data-btn-number="2">JavaScript</div>
-        <div class="btn p-btn" data-btn-number="3">React js</div>
+      <!-- footer links section -->
+      <div class="f-links">
+        <h3>Links</h3>
+        <ul>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span><a href="#">Home</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span><a href="#">About</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span><a href="#">Services</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span><a href="#">Portfolio</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span><a href="#">Contact</a>
+          </li>
+        </ul>
       </div>
-      <!-- portfolio-grid -->
-      <div class="container grid grid-three-column portfolio-images">
-        <div class="img-overlay p-btn--1">
-          <img
-            src="./images/project-1.jpg"
-            loading="lazy"
-            alt="portfolio images"
-          />
-          <div class="overlay">
-            <a
-              href="https://chhotumarandi.github.io/Unit-Converter/"
-              class="common-heading"
-              target="_blank"
-              >project 1</a
-            >
-          </div>
-        </div>
-
-        <div class="img-overlay p-btn--2">
-          <img
-            src="./images/project-2.jpg"
-            loading="lazy"
-            alt="portfolio images"
-          />
-          <div class="overlay">
-            <a
-              href="https://chhotumarandi.github.io/Background-Color-Changer/"
-              class="common-heading"
-              target="_blank"
-              >project 2</a
-            >
-          </div>
-        </div>
-
-        <div class="img-overlay p-btn--3">
-          <img
-            src="./images/project-3.jpg"
-            loading="lazy"
-            alt="portfolio images"
-          />
-          <div class="overlay">
-            <a
-              href="https://chhotumarandi.github.io/List-of-Netflix-movies/"
-              class="common-heading"
-              target="_blank"
-              >project 3</a
-            >
-          </div>
-        </div>
-
-        <div class="img-overlay p-btn--1 p-btn--3">
-          <img
-            src="./images/project-4.jpg"
-            loading="lazy"
-            alt="portfolio images"
-          />
-          <div class="overlay">
-            <a
-              href="https://chhotumarandi.github.io/Login-form/"
-              class="common-heading"
-              target="_blank"
-              >project 4</a
-            >
-          </div>
-        </div>
-
-        <div class="img-overlay p-btn--3 p-btn--2">
-          <img
-            src="./images/project-5.jpg"
-            loading="lazy"
-            alt="portfolio images"
-          />
-          <div class="overlay">
-            <a
-              href="https://chhotumarandi.github.io/Update-Counter/"
-              class="common-heading"
-              target="_blank"
-              >project 5</a
-            >
-          </div>
-        </div>
-
-        <div class="img-overlay p-btn--2">
-          <img
-            src="./images/project-6.jpg"
-            loading="lazy"
-            alt="portfolio images"
-          />
-          <div class="overlay">
-            <a
-              href="https://chhotumarandi.github.io/Review-Carousel/"
-              class="common-heading"
-              target="_blank"
-              >project 6</a
-            >
-          </div>
-        </div>
+      <!-- footer sercvices section -->
+      <div class="f-services">
+        <h3>Services</h3>
+        <ul>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span><a href="#">Web Desgin</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span><a href="#">App Development</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span><a href="#">Graphics Desgin</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span><a href="#">Animation</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span><a href="#">Motion Graphics</a>
+          </li>
+        </ul>
       </div>
-    </section>
+      <div class="f-address">
+        <h3>Have a Questions ?</h3>
+        <address>
+          <div>
+            <p>
+              <span>
+                <ion-icon name="location-outline"></ion-icon>
+              </span>
+              Ranchi, India
+            </p>
+          </div>
 
-    <!--=================
-Footer section start
-=================== -->
+          <div>
+            <p>
+              <span>
+                <ion-icon name="call-outline"></ion-icon>
+              </span>
+              <a href="tel: +918825386231">+91 8825386231</a>
+            </p>
+          </div>
 
-    <footer class="section-footer section">
-      <div class="container grid grid-four-column">
-        <div class="f-about">
-          <h3>About</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque
-            dolore ratione, consequatur cumque odit?
-          </p>
-        </div>
-        <!-- footer links section -->
-        <div class="f-links">
-          <h3>Links</h3>
-          <ul>
-            <li>
-              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
-              ><a href="#">Home</a>
-            </li>
-            <li>
-              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
-              ><a href="#">About</a>
-            </li>
-            <li>
-              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
-              ><a href="#">Services</a>
-            </li>
-            <li>
-              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
-              ><a href="#">Portfolio</a>
-            </li>
-            <li>
-              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
-              ><a href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <!-- footer sercvices section -->
-        <div class="f-services">
-          <h3>Services</h3>
-          <ul>
-            <li>
-              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
-              ><a href="#">Web Desgin</a>
-            </li>
-            <li>
-              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
-              ><a href="#">App Development</a>
-            </li>
-            <li>
-              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
-              ><a href="#">Graphics Desgin</a>
-            </li>
-            <li>
-              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
-              ><a href="#">Animation</a>
-            </li>
-            <li>
-              <span><ion-icon name="arrow-forward-outline"></ion-icon></span
-              ><a href="#">Motion Graphics</a>
-            </li>
-          </ul>
-        </div>
-        <div class="f-address">
-          <h3>Have a Questions ?</h3>
-          <address>
-            <div>
-              <p>
-                <span><ion-icon name="location-outline"></ion-icon></span>
-                Ranchi, India
-              </p>
-            </div>
-
-            <div>
-              <p>
-                <span><ion-icon name="call-outline"></ion-icon></span>
-                <a href="tel: +918825386231">+91 8825386231</a>
-              </p>
-            </div>
-
-            <div>
-              <p>
-                <span><ion-icon name="mail-outline"></ion-icon></span>
-                <a href="mailto: cmarandi29@gmail.com">cmarandi29@gmil.com</a>
-              </p>
-            </div>
-          </address>
-        </div>
+          <div>
+            <p>
+              <span>
+                <ion-icon name="mail-outline"></ion-icon>
+              </span>
+              <a href="mailto: cmarandi29@gmail.com">cmarandi29@gmail.com</a>
+            </p>
+          </div>
+        </address>
       </div>
-      <div class="container">
-        <div class="footer-social-icons">
-          <a href="" target="_blank">
-            <ion-icon name="logo-instagram" class="icons"></ion-icon>
-          </a>
-          <a href="" target="_blank">
-            <ion-icon name="logo-facebook" class="icons"></ion-icon>
-          </a>
-          <a href="" target="_blank">
-            <ion-icon name="logo-github" class="icons"></ion-icon>
-          </a>
-        </div>
-        <div class="credits">
-          <p>
-            Copyright © 2022 All rights reserved | This template is inspired by
-            Thapa Technical YT made with 🤍
-          </p>
-        </div>
+    </div>
+    <div class="container">
+      <div class="footer-social-icons">
+        <a href="https://www.instagram.com/jr_jerrry/" target="_blank">
+          <ion-icon name="logo-instagram" class="icons"></ion-icon>
+        </a>
+        <a href="" target="_blank">
+          <ion-icon name="logo-facebook" class="icons"></ion-icon>
+        </a>
+        <a href="https://github.com/chhotuMarandi" target="_blank">
+          <ion-icon name="logo-github" class="icons"></ion-icon>
+        </a>
       </div>
-    </footer>
-    <!--===============
+      <div class="credits">
+        <p>
+          Copyright © 2022 All rights reserved | This template is inspired by
+          Thapa Technical YT made with 🤍 India
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!--===============
 JavaScript Source file
 ================ -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
 </html>
