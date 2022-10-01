@@ -66,7 +66,7 @@ const myJsmedia = (widthSize) => {
     });
   }
 };
-const widthSize = window.matchMedia('(max-width: 780px');
+const widthSize = window.matchMedia('(max-width: 420px');
 // call listener funtion at run time
 myJsmedia(widthSize);
 // attach listener function on state change
