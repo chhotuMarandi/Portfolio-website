@@ -51,6 +51,8 @@ counterNumber.forEach((currentElm) => {
   updateNumber();
 });
 
+//swiper slide
+
 const myJsmedia = (widthSize) => {
   if (widthSize.matches) {
     new Swiper('.mySwiper', {
