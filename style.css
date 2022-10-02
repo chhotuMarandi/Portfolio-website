@@ -1142,4 +1142,8 @@ Responsive for mobile
   .section-footer .f-about {
     grid-column: 1/-1;
   }
+
+  .overlay .common-heading {
+    font-size: 3.2rem;
+  }
 }

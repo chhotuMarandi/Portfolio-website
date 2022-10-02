@@ -8,7 +8,9 @@ const p_img_elem = document.querySelectorAll('.img-overlay');
 
 p_btns.addEventListener('click', (e) => {
   const p_btn_clicked = e.target;
-  console.log(p_btn_clicked);
+  // console.log(p_btn_clicked);
+
+  if (!p_btn_clicked.classList.contains('p-btn')) return;
 
   p_btn.forEach((currElem) => currElem.classList.remove('p-btn-active'));
 
